@@ -1,0 +1,74 @@
+.virtual{
+    margin: 4rem 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+}
+.left>:nth-child(1){
+    font-weight: bold;
+    font-size: 2rem;
+    /* display: block;
+    width: 20rem; */
+}
+.left>:nth-child(2){
+    font-size: 1.6rem;
+    width: 20rem;
+}
+.left>:nth-child(3){
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.left>img{
+    width: 10rem;
+    position: absolute;
+    bottom: 3rem;
+}
+.right>.wrapper{
+    width: 30rem;
+}
+
+@media screen and (max-width:768px) {
+    .virtual{
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+    .left{
+        display: flex;
+        gap: 1rem;
+    }
+    .left>img{
+        position: absolute;
+        bottom: -2rem;
+        left: 5rem;
+    }
+    .right{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .left > :nth-child(1) {
+        font-size: 1.5rem;
+    }
+    .left > :nth-child(2){
+        font-size: 1rem;
+    }
+    .left > :nth-child(3){
+        font-size: 1rem;
+    }
+    .right>.wrapper{
+        width: 23rem;
+    }
+    
+}
